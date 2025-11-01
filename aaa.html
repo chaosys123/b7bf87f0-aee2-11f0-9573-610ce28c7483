@@ -395,7 +395,7 @@
                     })
                     .then(response => {
                         console.log(response.data);
-                        创建写入流，将文件保存到本地
+                        // 创建写入流，将文件保存到本地
                         const writer = fs.createWriteStream(outputPath);
                         response.data.pipe(writer);
 
